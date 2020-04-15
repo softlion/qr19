@@ -27,6 +27,10 @@ Analyse, design et code par [Vapolia](https://vapolia.fr)
 Quelques icones sont fournies par [Smashicons](https://www.flaticon.com/authors/smashicons) et [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect) de [Flaticon](https://www.flaticon.com/)  
 Librairie SVG [XamSvg](https://github.com/softlion/xamsvg-samples) offerte par Vapolia  
 
-## Sponsors
+## Devenir sponsor
 
-Vous souhaitez saluer cette initiative ? Aidez-moi avec un [don](https://liberapay.com/softlion/donate)
+Vous souhaitez saluer cette initiative, et soutenir l'effort commun contre la pandémié: 
+* Aidez-moi avec un [don](https://liberapay.com/softlion/donate)
+* Vous avez un projet pour moi ? Contactez-moi via github ou via l'icone facebook messenger sur https://vapolia.fr/
+
+[Tous les sponsors](https://github.com/softlion/qr19/sponsors)
