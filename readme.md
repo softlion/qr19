@@ -1,8 +1,17 @@
 # Application QR Covid 19
 
 Cette app lit le contenu d'un QR code généré par le [site web officiel](https://media.interieur.gouv.fr/deplacement-covid-19/) du gouvernement Français et en affiche le contenu avec des fonctionnalités supplémentaire: 
-* Calcul du temps passé depuis la sortie
-* Lien vers Google Maps pour vérifier la distance à l'adresse de confinement (notamment la limite de 1 km pour les sorties sportives)
+* Scan en continu: aucun besoin de toucher l'écran pour scanner et lire plusieurs attestations de suite.
+* Calcul du temps passé depuis le début de la sortie
+* Lien vers Google Maps pour vérifier la distance entre le lieu actuel et l'adresse de confinement
+* Indicateur rouge/vert en fonction de la validité estimée de l'attestation. Ces règles automatiques sont incomplètes et l'agent doit faire preuve de discernement.
+
+## Confidentialité et Sécurité
+
+Cette app est autonome, et n'est connectée à aucun serveur.  
+Aucune information personnelle ou non personnelle n'est collectée par son créateur.  
+Néanmoins Google Play Store et Apple Store enregistrent des statistiques d'utilisation et peuvent enregistrer des rapports de crash.  
+La position GPS de l'utilisateur n'est ni lue, ni utilisée. La carte est fournie par Google Maps.  
 
 ## Conditions Genérales d'Utilisation
 
@@ -13,13 +22,6 @@ Si vous ne souhaitez plus accepter ces conditions, supprimez l'app de votre appa
 
 Le code source de l'app est disponible sur ce github, notamment pour analyse ou push requests. L'utilisation de ce code pour créer une nouvelle app publiée sur un store public ou privé n'est pas autorisée.  
 Les versions de l'app sur les stores Google et Apple sont compilés à partir de ce github et distribuées automatiquement via le service AppCenter de Microsoft.
-
-## Confidentialité et Sécurité
-
-Cette app est autonome, et n'est connectée à aucun serveur.  
-Aucune information personnelle ou non personnelle n'est collectée par son créateur.  
-Néanmoins Google Play Store et Apple Store enregistrent des statistiques d'utilisation et peuvent enregistrer des rapports de crash.  
-La position GPS de l'utilisateur n'est ni lue, ni utilisée. La carte est fournie par Google Maps.  
 
 ## Attributions
 
