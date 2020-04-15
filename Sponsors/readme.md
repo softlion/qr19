@@ -9,5 +9,4 @@ Vous souhaitez saluer cette initiative, et soutenir l'effort commun contre la pa
 ## Sponsors actuels
 
 Aucun sponsor pour le moment.  
-Soutenez mon effort contre la pandémie, n'hésitez pas !
-git pus
+Devenez sponsor pour soutenir mon effort contre la pandémie et afficher votre marque ici.
