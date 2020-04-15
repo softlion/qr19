@@ -1,25 +1,25 @@
 # Application QR Covid 19
 
-## Conditions Genérales d'Utilisation
+## Conditions GenÃ©rales d'Utilisation
 
-Cette app lit le contenu d'un QR code généré par le [site web officiel](https://media.interieur.gouv.fr/deplacement-covid-19/) du gouvernement Francais et en affiche le contenu avec des fonctionalités supplémentaire: 
-* Calcul du temps passé depuis la sortie
-* Lien vers Google Maps pour vérifier la distance à l'adresse de confinement (notamment la limite de 1km pour les sorties sportives)
+Cette app lit le contenu d'un QR code gÃ©nÃ©rÃ© par le [site web officiel](https://media.interieur.gouv.fr/deplacement-covid-19/) du gouvernement Francais et en affiche le contenu avec des fonctionalitÃ©s supplÃ©mentaire: 
+* Calcul du temps passÃ© depuis la sortie
+* Lien vers Google Maps pour vÃ©rifier la distance Ã  l'adresse de confinement (notamment la limite de 1km pour les sorties sportives)
 
 Cette app est fournie gratuitement pendant le confinement, sans support d'aucune sorte.  
 Elle est garantie ne contenir aucun spyware ou autre code malveillant intentionnel. Aucune autre garantie n'est fournie.  
 En l'utilisant vous acceptez ces conditions d'utilisation.  
-Si vous ne souhaitez plus accepter ces conditions, supprimez l'app de votre appareil à tout moment.
+Si vous ne souhaitez plus accepter ces conditions, supprimez l'app de votre appareil Ã  tout moment.
 
-Le code source de l'app est disponible sur ce github pour analyse uniquement. Aucune copie/réutilisation de ce code n'est autorisée.  
-Les versions de l'app sur les stores Google et Apple sont compilés à partir de ce github et distribuées automatiquement via le service AppCenter de Microsoft.
+Le code source de l'app est disponible sur ce github, notamment pour analyse ou push requests. L'utilisation de ce code pour crÃ©er une nouvelle app publiÃ©e sur un store public ou privÃ© n'est pas autorisÃ©e.  
+Les versions de l'app sur les stores Google et Apple sont compilÃ©s Ã  partir de ce github et distribuÃ©es automatiquement via le service AppCenter de Microsoft.
 
-## Confidentialité et Sécurité
+## ConfidentialitÃ© et SÃ©curitÃ©
 
-Cette app est autonome, et n'est connectée à aucun serveur.  
-Aucune information personnelle ou non personnelle n'est collectée par son créateur.  
-Néanmoins Google Play Store et Apple Store enregistrent des statistiques d'utilisation et peuvent enregistrer des rapports de crash.  
-La position GPS de l'utilisateur n'est ni lue, ni utilisée. La carte est fournie par Google Maps.  
+Cette app est autonome, et n'est connectÃ©e Ã  aucun serveur.  
+Aucune information personnelle ou non personnelle n'est collectÃ©e par son crÃ©ateur.  
+NÃ©anmoins Google Play Store et Apple Store enregistrent des statistiques d'utilisation et peuvent enregistrer des rapports de crash.  
+La position GPS de l'utilisateur n'est ni lue, ni utilisÃ©e. La carte est fournie par Google Maps.  
 
 ## Attributions
 
@@ -29,4 +29,4 @@ Librairie SVG [XamSvg](https://github.com/softlion/xamsvg-samples) offerte par V
 
 ## Sponsoring
 
-Les bénéfices du programme de sponsoring seront reversés à une association en lien avec le secteur médical Français.
+Vous souhaitez saluer cette initiative ? Rejoingnez la cagnotte Leetchi. Les bÃ©nÃ©fices seront reversÃ©s Ã  une association proposant une initiative en lien avec la crise sanitaire. Les sponsors apparaitront ici.
