@@ -35,4 +35,4 @@ Vous souhaitez saluer cette initiative, et soutenir l'effort commun contre la pa
 * Aidez-moi avec un [don](https://liberapay.com/softlion/donate)
 * Vous avez un projet pour moi ? Contactez-moi via github ou via l'icone facebook messenger sur https://vapolia.fr/
 
-[Tous les sponsors](https://github.com/softlion/qr19/sponsors)
+[Tous les sponsors](https://github.com/softlion/qr19/tree/master/Sponsors)
