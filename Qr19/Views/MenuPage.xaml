@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:parts="clr-namespace:Qr19.Views.Parts;assembly=Qr19"
+             x:Class="Qr19.Views.MenuPage"
+             BackgroundColor="#F1F6F3"
+             Title="Menu">
+
+    <ContentPage.Resources>
+        <Style TargetType="parts:MenuPart">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="LightSkyBlue" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="Fill" HorizontalOptions="Fill">
+        <Grid BackgroundColor="{StaticResource NavigationPrimary}" HeightRequest="200">
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text="QR Covid 19" FontSize="Large" />
+                <Label Text="Par vapolia.fr" FontSize="Caption" />
+            </StackLayout>
+        </Grid>
+
+        <CollectionView SelectionMode="Single" SelectedItem="{Binding SelectedMenuItem}" ItemsSource="{Binding MenuItems}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <parts:MenuPart Text="{Binding Text}" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </StackLayout>
+
+</ContentPage>

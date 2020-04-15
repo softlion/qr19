@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:svg="clr-namespace:XamSvg.XamForms;assembly=XamSvg.XamForms"
+             xmlns:lib="clr-namespace:Qr19.Lib;assembly=Qr19"
+             mc:Ignorable="d"
+             x:Class="Qr19.Views.ScanPage"
+             Title="{Binding Title}"
+             >
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sponsors" Command="{Binding HelpCommand}" CommandParameter="https://github.com/softlion/QRCovid19/sponsors" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#000000" />
+                <Setter Property="FontSize" Value="Body" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+
+            <lib:QrScannerView x:Name="Scanner" ScanResultCommand="{Binding ScanResultCommand}" IsScanning="{Binding IsScanning}" IsTorchOn="{Binding IsTorchOn}" />
+
+            <Frame BackgroundColor="#80000080" VerticalOptions="Start" HeightRequest="10" HorizontalOptions="FillAndExpand" Padding="0" />
+            <Frame BackgroundColor="#80000080" VerticalOptions="End" HeightRequest="10" HorizontalOptions="FillAndExpand" Padding="0" />
+            <Frame BackgroundColor="#a00000ff" VerticalOptions="Center" HeightRequest="1" HorizontalOptions="FillAndExpand" Padding="0" />
+
+            <svg:SvgImage WidthRequest="50" HeightRequest="50" Svg="{Binding IsValidSvg}" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,0,20" Command="{Binding ClearCommand}" IsVisible="{Binding IsClear,Converter={lib:InvertedBoolConverter}}" />
+            <svg:SvgImage WidthRequest="40" HeightRequest="40" Svg="res:images.flash" HorizontalOptions="End" VerticalOptions="Start" Margin="0,20,20,0" Command="{Binding ToggleTorchCommand}" ColorMappingSelected="000000=FFFFFF" IsSelected="{Binding IsTorchOn}" />
+
+        </Grid>
+
+
+        <Grid Grid.Row="1" Padding="10" BackgroundColor="Azure">
+            <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" Spacing="0" IsVisible="{Binding IsClear,Converter={lib:InvertedBoolConverter}}">
+
+                <Label Text="{Binding Model.DateCreated, StringFormat='Autorisation crée le {0:d/M/yyyy} à {0:H\\hmm}'}" TextColor="#606060" />
+                <BoxView HeightRequest="10"/>
+
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{Binding Model.FirstName, StringFormat='{0}'}" />
+                            <Span Text="{Binding Model.LastName, StringFormat=' {0}'}" />
+                            <Span Text="{Binding Model.Age, StringFormat=' ({0} ans)'}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Text="{Binding Model.Address}" TextColor="Blue" >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenMapCommand}" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{Binding Model.BirthDate, StringFormat='Né le {0:d/M/yyyy}'}" />
+                            <Span Text="{Binding Model.BirthPlace, StringFormat=' à {0}'}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <BoxView HeightRequest="10"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Sortie depuis" />
+                            <Span Text="{Binding Model.LeaveDurationTotalMinutes, StringFormat=' {0}mn'}" FontAttributes="Bold" FontSize="Body" />
+                            <Span Text="{Binding Model.DateLeaveHome, StringFormat=' (le {0:d/M/yyyy} à {0:HH\\hmm})'}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Motifs: " />
+                            <Span Text="{Binding Model.ReasonString}" FontAttributes="Bold" FontSize="Body" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" IsVisible="{Binding IsClear}">
+                <Label Text="VISER LE QR CODE" FontSize="Title" />
+            </StackLayout>
+        </Grid>
+
+    </Grid> 
+
+</ContentPage>
