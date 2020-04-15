@@ -27,6 +27,6 @@ Analyse, design et code par [Vapolia](https://vapolia.fr)
 Quelques icones sont fournies par [Smashicons](https://www.flaticon.com/authors/smashicons) et [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect) de [Flaticon](https://www.flaticon.com/)  
 Librairie SVG [XamSvg](https://github.com/softlion/xamsvg-samples) offerte par Vapolia  
 
-## Sponsoring
+## Sponsors
 
-Vous souhaitez saluer cette initiative ? Rejoingnez la cagnotte Leetchi. Les bénéfices seront reversés à une association proposant une initiative en lien avec la crise sanitaire. Les sponsors apparaitront ici.
+Vous souhaitez saluer cette initiative ? Aidez-moi avec un [don](https://liberapay.com/softlion/donate)
