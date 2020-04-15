@@ -9,9 +9,9 @@ Cette app lit le contenu d'un QR code généré par le [site web officiel](https
 ## Confidentialité et Sécurité
 
 Cette app est autonome, et n'est connectée à aucun serveur.  
-Aucune information personnelle ou non personnelle n'est collectée par son créateur.  
-Néanmoins Google Play Store et Apple Store enregistrent des statistiques d'utilisation et peuvent enregistrer des rapports de crash.  
-La position GPS de l'utilisateur n'est ni lue, ni utilisée. La carte est fournie par Google Maps.  
+La position GPS de l'utilisateur n'est ni lue, ni utilisée.  
+
+Elle respecte le GDPR: aucune information personnelle et même non personnelle n'est collectée. Néanmoins le Google Play Store enregistre des statistiques d'utilisation et peut éventuellement transmettre des rapports de crash. Reportez-vous à la charte de confidentialité de Google pour plus de détails.
 
 ## Conditions Genérales d'Utilisation
 
