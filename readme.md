@@ -1,8 +1,8 @@
 # Application QR Covid 19
 
-Cette app lit le contenu d'un QR code généré par le [site web officiel](https://media.interieur.gouv.fr/deplacement-covid-19/) du gouvernement Francais et en affiche le contenu avec des fonctionalités supplémentaire: 
+Cette app lit le contenu d'un QR code généré par le [site web officiel](https://media.interieur.gouv.fr/deplacement-covid-19/) du gouvernement Français et en affiche le contenu avec des fonctionnalités supplémentaire: 
 * Calcul du temps passé depuis la sortie
-* Lien vers Google Maps pour vérifier la distance à l'adresse de confinement (notamment la limite de 1km pour les sorties sportives)
+* Lien vers Google Maps pour vérifier la distance à l'adresse de confinement (notamment la limite de 1 km pour les sorties sportives)
 
 ## Conditions Genérales d'Utilisation
 
