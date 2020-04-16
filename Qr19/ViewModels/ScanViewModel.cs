@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Linq;
 using System.Windows.Input;
 using Qr19.Lib.Models;
@@ -61,6 +62,8 @@ namespace Qr19.ViewModels
 
                 try
                 {
+                    var culture = CultureInfo.GetCultureInfo("FR-fr");
+
                     var textItems = qr.Text.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries)
                         .Select(item => item.Split(new[] { ':' }, StringSplitOptions.RemoveEmptyEntries))
                         .Where(s => s.Length == 2 && s[0] != null && s[1] != null)
@@ -68,8 +71,8 @@ namespace Qr19.ViewModels
 
                     var qrModel = new QrViewModel
                     {
-                        DateCreated = DateTime.Parse(textItems["Cree le"].Replace(" ", "").Replace("a", " ").Replace("h", ":")),
-                        DateLeaveHome = DateTime.Parse(textItems["Sortie"].Replace(" ", "").Replace("a", " ").Replace("h", ":")),
+                        DateCreated = DateTime.Parse(textItems["Cree le"].Replace(" ", "").Replace("a", " ").Replace("h", ":"), culture),
+                        DateLeaveHome = DateTime.Parse(textItems["Sortie"].Replace(" ", "").Replace("a", " ").Replace("h", ":"), culture),
                         FirstName = textItems["Prenom"],
                         LastName = textItems["Nom"],
                         Address = textItems["Adresse"],
@@ -78,9 +81,9 @@ namespace Qr19.ViewModels
                     };
 
                     var birthInfo = textItems["Naissance"];
-                    qrModel.BirthDate = DateTime.Parse(birthInfo.Substring(0, 10));
-                    qrModel.BirthPlace = birthInfo.Substring(13);
-
+                    qrModel.BirthDate = DateTime.Parse(birthInfo.Substring(0, birthInfo.IndexOf(' ')), culture);
+                    qrModel.BirthPlace = birthInfo.Substring(birthInfo.IndexOf(' '));
+                    qrModel.BirthPlace = qrModel.BirthPlace.Substring(qrModel.BirthPlace.IndexOf('a')+2);
 
                     var isTimeInvalid = (qrModel.Reasons.Count == 1 && qrModel.Reasons.Contains("sport") && (DateTime.Now - qrModel.DateLeaveHome).TotalHours > 1)
                                         || qrModel.DateCreated.Date != DateTime.Now.Date;

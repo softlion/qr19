@@ -1,3 +1,5 @@
+![badge](https://build.appcenter.ms/v0.1/apps/af296157-d790-40c7-a895-8406154e7f12/branches/master/badge)
+
 # Application QR Covid 19
 
 Cette app lit le contenu d'un QR code généré par le [site web officiel](https://media.interieur.gouv.fr/deplacement-covid-19/) du gouvernement Français et en affiche le contenu avec des fonctionnalités supplémentaire: 
