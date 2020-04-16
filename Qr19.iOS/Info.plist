@@ -7,7 +7,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Qr19</string>
 	<key>CFBundleIdentifier</key>
-	<string>fr.vapolia.Qr19</string>
+	<string>fr.vapolia.qr19</string>
 	<key>MinimumOSVersion</key>
 	<string>11.4</string>
 	<key>AppStoreId</key>
