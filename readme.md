@@ -14,7 +14,7 @@ Cette app lit le contenu d'un QR code généré par le [site web officiel](https
 Cette app est autonome, et n'est connectée à aucun serveur.  
 La position GPS de l'utilisateur n'est ni lue, ni utilisée.  
 
-Elle respecte le GDPR: aucune information personnelle et même non personnelle n'est collectée. Néanmoins le Google Play Store enregistre des statistiques d'utilisation et peut éventuellement transmettre des rapports de crash. Reportez-vous à la charte de confidentialité de Google pour plus de détails.
+Elle respecte le GDPR: aucune information personnelle et même non personnelle n'est collectée. Néanmoins le Google Play Store et l'AppStore d'Apple enregistrent des statistiques d'utilisation et peuvent transmettre des rapports de crash. Reportez-vous à la charte de confidentialité de Google et d'Apple pour plus de détails.
 
 ## Conditions Genérales d'Utilisation
 
@@ -24,7 +24,7 @@ En l'utilisant vous acceptez ces conditions d'utilisation.
 Si vous ne souhaitez plus accepter ces conditions, supprimez l'app de votre appareil à tout moment.
 
 Le code source de l'app est disponible sur ce github, notamment pour analyse ou push requests. L'utilisation de ce code pour créer une nouvelle app publiée sur un store public ou privé n'est pas autorisée.  
-Les versions de l'app sur les stores Google et Apple sont compilés à partir de ce github et distribuées automatiquement via le service AppCenter de Microsoft.
+Les versions de l'app sur les stores Google et Apple sont compilées à partir de ce github et distribuées automatiquement via le service AppCenter de Microsoft.
 
 ## Attributions
 
