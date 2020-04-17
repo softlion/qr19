@@ -128,7 +128,7 @@ namespace Qr19.ViewModels
             {
                 if (model != null)
                 {
-                    var uri = "https://www.google.com/maps/dir/?api=1&destination=" + Uri.EscapeDataString(model.Address);
+                    var uri = "https://www.google.com/maps/dir/?api=1&origin=position+actuelle&dir_action=preview&destination=" + Uri.EscapeDataString(model.Address);
                     Browser.OpenAsync(uri);
                 }
             });
