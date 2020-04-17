@@ -18,7 +18,7 @@ namespace Qr19.iOS.Lib
                 //if (!Element.HasTorch) return; //Always false..
                 var on = Element.IsTorchOn;
                 var device = AVFoundation.AVCaptureDevice.GetDefaultDevice(AVFoundation.AVMediaType.Video);
-                if (on == device.TorchActive) 
+                if (device == null || on == device.TorchActive) 
                     return;
 
                 var e = new {Occurred = false, Message = string.Empty};
