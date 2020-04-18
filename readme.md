@@ -1,5 +1,5 @@
 Android ![badge](https://build.appcenter.ms/v0.1/apps/af296157-d790-40c7-a895-8406154e7f12/branches/master/badge) 
-iOS ![badge](https://build.appcenter.ms/v0.1/apps/c54eb1df-b61b-43f4-b3a1-e7429f89d1a9/branches/master/badge)
+iOS ![badge](https://build.appcenter.ms/v0.1/apps/c54eb1df-b61b-43f4-b3a1-e7429f89d1a9/branches/master/badge?t=1)
 
 # Application QR Covid 19
 
