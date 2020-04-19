@@ -2,11 +2,10 @@ Android ![badge](https://build.appcenter.ms/v0.1/apps/af296157-d790-40c7-a895-84
 iOS ![badge](https://build.appcenter.ms/v0.1/apps/c54eb1df-b61b-43f4-b3a1-e7429f89d1a9/branches/master/badge?t=1)
 
 __AppStore d'Apple__:  
-Apple refuse de publier l'app, sous le couvert d'un nouvel article de leur CGU qui interdit à une société non affiliée au **secteur médical** de fournir un service ou un contenu en rapport avec la pandémie en cours.
+Apple refuse de publier l'app, sous le couvert d'un nouvel article de leur CGU qui interdit à une société non affiliée au **secteur médical** de fournir un service ou un contenu en rapport avec la pandémie en cours. La médiation n'y a rien fait. Encore une fois cette entreprise bafoue les droits fondamentaux en se substituant à la justice française.
 
 __PlayStore de Google__:  
-Pending Publication sans aucune autre information depuis le 15 avril 2020  
-Téléchargement direct de l'APK dans [Github Release](https://github.com/softlion/qr19/releases)
+[Google Play Store](https://play.google.com/store/apps/details?id=fr.vapolia.qr19)
 
 # Application QR Covid 19
 
