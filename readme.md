@@ -5,7 +5,7 @@ __AppStore d'Apple__:
 Apple refuse de publier l'app, sous le couvert d'un nouvel article de leur CGU qui interdit à une société non affiliée au **secteur médical** de fournir un service ou un contenu en rapport avec la pandémie en cours. La médiation n'y a rien fait. Encore une fois cette entreprise bafoue les droits fondamentaux en se substituant à la justice française.
 
 __PlayStore de Google__:  
-[Google Play Store](https://play.google.com/store/apps/details?id=fr.vapolia.qr19)
+[QR19 sur Google Play Store](https://play.google.com/store/apps/details?id=fr.vapolia.qr19)
 
 # Application QR Covid 19
 
