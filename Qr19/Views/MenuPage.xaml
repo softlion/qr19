@@ -26,7 +26,7 @@
     <StackLayout VerticalOptions="Fill" HorizontalOptions="Fill">
         <Grid BackgroundColor="{StaticResource NavigationPrimary}" HeightRequest="200">
             <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
-                <Label Text="QR Covid 19" FontSize="Large" />
+                <Label Text="QR 19" FontSize="Large" />
                 <Label Text="Par vapolia.fr" FontSize="Caption" />
             </StackLayout>
         </Grid>

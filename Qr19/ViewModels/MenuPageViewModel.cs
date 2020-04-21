@@ -16,8 +16,8 @@ namespace Qr19.ViewModels
         {
             //new MenuItemModel { Text = "INFOS COVID 19", Url = "https://www.gouvernement.fr/info-coronavirus" },
             //new MenuItemModel { Text = "GENERATEUR D'ATTESTATION", Url = "https://media.interieur.gouv.fr/deplacement-covid-19/" },
-            new MenuItemModel { Text = "CONFIDENTIALITÉ", Url = "https://github.com/softlion/Qr19" },
-            new MenuItemModel { Text = "SPONSORS", Url = "https://github.com/softlion/Qr19/sponsors" },
+            new MenuItemModel { Text = "CONFIDENTIALITÉ", Url = "https://github.com/softlion/qr19" },
+            new MenuItemModel { Text = "SPONSORS", Url = "https://github.com/softlion/qr19/sponsors" },
         };
 
         private async void OnMenuItemChanged()

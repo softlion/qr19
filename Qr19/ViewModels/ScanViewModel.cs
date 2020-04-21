@@ -32,7 +32,7 @@ namespace Qr19.ViewModels
 
         public ScanViewModel()
         {
-            Title = "QR COVID 19";
+            Title = "QR 19";
             isScanning = true;
             isClear = true;
 

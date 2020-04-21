@@ -11,7 +11,7 @@
              >
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Sponsors" Command="{Binding HelpCommand}" CommandParameter="https://github.com/softlion/QRCovid19/sponsors" />
+        <ToolbarItem Text="Sponsors" Command="{Binding HelpCommand}" CommandParameter="https://github.com/softlion/qr19/sponsors" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Resources>
