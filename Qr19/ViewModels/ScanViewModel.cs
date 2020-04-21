@@ -130,6 +130,21 @@ namespace Qr19.ViewModels
                     Browser.OpenAsync(uri);
                 }
             });
+
+            MessagingCenter.Subscribe<string, AppState>(this, App.AppStateChangedMessage, (s, state) =>
+            {
+                if(state == AppState.Sleep)
+                    OnDisappearing();
+                else
+                    OnAppearing();
+            });
+        }
+
+        public void OnDisappearing()
+        {
+            isCurrentTorchOn = isTorchOn;
+            IsScanning = false;
+            IsTorchOn = false;
         }
 
         public void OnAppearing()
@@ -138,15 +153,10 @@ namespace Qr19.ViewModels
             IsTorchOn = isCurrentTorchOn;
         }
 
-        public void OnDisappearing()
-        {
-            IsScanning = false;
-            isCurrentTorchOn = isTorchOn;
-            IsTorchOn = false;
-        }
         public void Dispose()
         {
-            IsScanning = false;
+            MessagingCenter.Unsubscribe<string, AppState>(this, App.AppStateChangedMessage);
+            OnDisappearing();
         }
     }
 }
