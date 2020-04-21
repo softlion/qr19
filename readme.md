@@ -46,7 +46,7 @@ Librairie SVG [XamSvg](https://github.com/softlion/xamsvg-samples) offerte par V
 
 ## Devenir sponsor
 
-Vous souhaitez saluer cette initiative, et soutenir l'effort commun contre la pandémié: 
+Vous souhaitez saluer cette initiative: 
 * Aidez-moi avec un [don](https://liberapay.com/softlion/donate)
 * Vous avez un projet pour moi ? Contactez-moi via github ou via l'icone facebook messenger sur https://vapolia.fr/
 
