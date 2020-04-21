@@ -14,8 +14,8 @@ namespace Qr19.ViewModels
 
         public List<MenuItemModel> MenuItems { get; } = new List<MenuItemModel>
         {
-            new MenuItemModel { Text = "INFOS COVID 19", Url = "https://www.gouvernement.fr/info-coronavirus" },
-            new MenuItemModel { Text = "GENERATEUR D'ATTESTATION", Url = "https://media.interieur.gouv.fr/deplacement-covid-19/" },
+            //new MenuItemModel { Text = "INFOS COVID 19", Url = "https://www.gouvernement.fr/info-coronavirus" },
+            //new MenuItemModel { Text = "GENERATEUR D'ATTESTATION", Url = "https://media.interieur.gouv.fr/deplacement-covid-19/" },
             new MenuItemModel { Text = "CONFIDENTIALITÉ", Url = "https://github.com/softlion/Qr19" },
             new MenuItemModel { Text = "SPONSORS", Url = "https://github.com/softlion/Qr19/sponsors" },
         };

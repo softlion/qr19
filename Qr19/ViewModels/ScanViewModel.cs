@@ -11,11 +11,9 @@ namespace Qr19.ViewModels
 {
     public class ScanViewModel : BaseViewModel, IDisposable
     {
-        private bool isScanning, isTorchOn;
-        private string prevText;
-        private bool isValid;
-        private string isValidSvg;
-        private bool isClear;
+        private bool isScanning, isTorchOn, isCurrentTorchOn;
+        private string prevText, isValidSvg;
+        private bool isValid, isClear;
         private QrViewModel model;
 
         public ICommand ScanResultCommand { get; }
@@ -128,21 +126,23 @@ namespace Qr19.ViewModels
             {
                 if (model != null)
                 {
-                    var uri = "https://www.google.com/maps/dir/?api=1&origin=position+actuelle&dir_action=preview&destination=" + Uri.EscapeDataString(model.Address);
+                    var uri = $"https://www.google.com/maps/dir/?api=1&origin=position+actuelle&dir_action=preview&destination={Uri.EscapeDataString(model.Address)}";
                     Browser.OpenAsync(uri);
                 }
             });
         }
 
-
         public void OnAppearing()
         {
             IsScanning = true;
+            IsTorchOn = isCurrentTorchOn;
         }
 
         public void OnDisappearing()
         {
             IsScanning = false;
+            isCurrentTorchOn = isTorchOn;
+            IsTorchOn = false;
         }
         public void Dispose()
         {

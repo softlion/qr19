@@ -29,7 +29,7 @@ Elle est garantie ne contenir aucun spyware ou autre code malveillant intentionn
 En l'utilisant vous acceptez ces conditions d'utilisation.  
 Si vous ne souhaitez plus accepter ces conditions, supprimez l'app de votre appareil à tout moment.
 
-Le code source de l'app est disponible sur ce github, notamment pour analyse ou push requests. L'utilisation de ce code pour créer une nouvelle app publiée sur un store public ou privé n'est pas autorisée.  
+Le code source de l'app est disponible sur ce github, notamment pour analyse ou push requests.
 Les versions de l'app sur les stores Google et Apple sont compilées à partir de ce github et distribuées automatiquement via le service AppCenter de Microsoft.
 
 ## Attributions
