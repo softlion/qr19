@@ -13,7 +13,7 @@ En cours de négociations avec Apple
 __PlayStore de Google__:  
 [QR19 sur Google Play Store](https://play.google.com/store/apps/details?id=fr.vapolia.qr19)
 
-# Application QR Covid 19
+# Application QR 19
 
 Cette app lit le contenu d'un QR code généré par le [site web officiel](https://media.interieur.gouv.fr/deplacement-covid-19/) du gouvernement Français et en affiche le contenu avec des fonctionnalités supplémentaire: 
 * Scan en continu: aucun besoin de toucher l'écran pour scanner et lire plusieurs attestations de suite.
